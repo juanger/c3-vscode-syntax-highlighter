@@ -1,0 +1,245 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "fileTypes": [
+    "c3ui"
+  ],
+  "name": "C3UI",
+  "patterns": [
+    {
+      "captures": {
+        "1": {
+          "name": "comment.line.hashbang.c3ui"
+        }
+      },
+      "comment": "Comments",
+      "match": "^(#!).+$\\n",
+      "name": "keyword.other.c3ui"
+    },
+    {
+      "begin": "/\\*",
+      "captures": {
+        "0": {
+          "name": "punctuation.definition.comment.c3ui"
+        }
+      },
+      "comment": "Comment Block",
+      "end": "\\*/",
+      "name": "comment.block.c3ui"
+    },
+    {
+      "begin": "\\'",
+      "comment": "Quotes",
+      "end": "\\'",
+      "name": "string.quoted.single.c3ui"
+    },
+    {
+      "begin": "\\\"",
+      "comment": "Quotes",
+      "end": "\\\"",
+      "name": "string.quoted.double.c3ui"
+    },
+    {
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.comment.c3ui"
+        }
+      },
+      "comment": "comment line",
+      "match": "(//).*$\\n?",
+      "name": "comment.line.double-slash.c3ui"
+    },
+    {
+      "comment": "Entity",
+      "match": "\\b(entity)\\b",
+      "name": "keyword.control.block.c3ui"
+    },
+    {
+      "comment": "app",
+      "match": "\\b(app)\\b",
+      "name": "keyword.control.block.c3ui"
+    },
+    {
+      "comment": "ui",
+      "match": "\\b(ui|UI)\\b",
+      "name": "keyword.control.block.c3ui"
+    },
+    {
+      "comment": "Module",
+      "match": "\\b(module)\\b",
+      "name": "keyword.control.block.c3ui"
+    },
+    {
+      "comment": "Type",
+      "match": "\\b(type)\\b",
+      "name": "keyword.control.block.c3ui"
+    },
+    {
+      "comment": "key",
+      "match": "\\b(key)\\b",
+      "name": "keyword.control.block.c3ui"
+    },
+    {
+      "comment": "application",
+      "match": "\\b(application)\\b",
+      "name": "keyword.control.block.c3ui"
+    },
+    {
+      "comment": "component",
+      "match": "\\b(component)\\b",
+      "name": "keyword.control.block.c3ui"
+    },
+    {
+      "comment": "dataSource",
+      "match": "\\b(dataSource)\\b",
+      "name": "keyword.control.block.c3ui"
+    },
+    {
+      "comment": "page",
+      "match": "\\b(page)\\b",
+      "name": "keyword.control.block.c3ui"
+    },
+    {
+      "comment": "enum",
+      "match": "\\b(enum)",
+      "name": "keyword.control.block.c3ui"
+    },
+    {
+      "comment": "Abstract",
+      "match": "\\b(abstract)\\b",
+      "name": "keyword.other.modifier.c3ui"
+    },
+    {
+      "comment": "extendable",
+      "match": "\\b(extendable)\\b",
+      "name": "keyword.other.modifier.c3ui"
+    },
+    {
+      "comment": "constant",
+      "match": "\\b(constant)\\b",
+      "name": "keyword.other.modifier.c3ui"
+    },
+    {
+      "comment": "dated",
+      "match": "\\b(dated)\\b",
+      "name": "keyword.other.modifier.c3ui"
+    },
+    {
+      "comment": "default",
+      "match": "\\b(default)\\b",
+      "name": "keyword.other.modifier.c3ui"
+    },
+    {
+      "comment": "post",
+      "match": "\\b(post)\\b",
+      "name": "keyword.other.modifier.c3ui"
+    },
+    {
+      "comment": "stored calc",
+      "match": "\\b(stored)\\b",
+      "name": "keyword.operator.c3ui"
+    },
+    {
+      "comment": "stored calc",
+      "match": "\\b(calc)\\b",
+      "name": "keyword.operator.c3ui"
+    },
+    {
+      "comment": "mixin/remix/mixes",
+      "match": "\\b(mixes|remix|mixin)\\b",
+      "name": "keyword.operator.c3ui"
+    },
+    {
+      "comment": "extends",
+      "match": "\\b(extends)\\b",
+      "name": "keyword.operator.c3ui"
+    },
+    {
+      "comment": "scratches",
+      "match": "\\b(scratches)\\b",
+      "name": "keyword.operator.c3ui"
+    },
+    {
+      "comment": "translate",
+      "match": "\\b(translate)\\b",
+      "name": "keyword.operator.c3ui"
+    },
+    {
+      "comment": "view",
+      "match": "\\b(view)\\b",
+      "name": "keyword.operator.c3ui"
+    },
+    {
+      "comment": "export",
+      "match": "\\b(export)\\b",
+      "name": "keyword.operator.c3ui"
+    },
+    {
+      "comment": "dyn",
+      "match": "\\b(dyn)\\b",
+      "name": "keyword.operator.c3ui"
+    },
+    {
+      "captures": {
+        "1": {
+          "name": "keyword.other.import.static.c3ui"
+        },
+        "2": {
+          "name": "string.other.quoted-or-unquoted.c3ui"
+        }
+      },
+      "comment": "import",
+      "match": "\\b(import)\\s+(\\w+)\\s"
+    },
+    {
+      "comment": "types",
+      "match": "\\b(string|int|boolean|decimal|double|datetime|integer)\\b",
+      "name": "storage.type.c3ui"
+    },
+    {
+      "comment": "types",
+      "match": "\\b(any|anyof|binary|blob|byte|char|character)\\b",
+      "name": "storage.type.c3ui"
+    },
+    {
+      "comment": "types",
+      "match": "\\b(clob|date|dateonly|float|lambda|long)\\b",
+      "name": "storage.type.c3ui"
+    },
+    {
+      "comment": "types",
+      "match": "\\b(map|native|set|string|utc)\\b",
+      "name": "storage.type.c3ui"
+    },
+    {
+      "comment": "types",
+      "match": "\\b(Dimension|dimension|string|utc)\\b",
+      "name": "storage.type.c3ui"
+    },
+    {
+      "comment": "\\@",
+      "match": "\\@(\\w+)",
+      "name": "entity.name.function.c3ui"
+    },
+    {
+      "comment": false,
+      "match": "\\!",
+      "name": "keyword.operator.required.c3ui"
+    },
+    {
+      "comment": "equal",
+      "match": "\\=",
+      "name": "keyword.operator.assignment.c3ui"
+    },
+    {
+      "comment": "boolean",
+      "match": "\\b(true|false|null)\\b",
+      "name": "constant.language.c3ui"
+    },
+    {
+      "comment": "constant numbers",
+      "match": "\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b",
+      "name": "constant.numeric.c3ui"
+    }
+  ],
+  "scopeName": "source.c3ui"
+}

@@ -1,0 +1,270 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "fileTypes": [
+    "c3typ"
+  ],
+  "name": "C3Type",
+  "patterns": [
+    {
+      "captures": {
+        "1": {
+          "name": "comment.line.hashbang.c3typ"
+        }
+      },
+      "comment": "Comments",
+      "match": "^(#!).+$\\n",
+      "name": "keyword.other.c3typ"
+    },
+    {
+      "begin": "/\\*",
+      "captures": {
+        "0": {
+          "name": "punctuation.definition.comment.c3typ"
+        }
+      },
+      "comment": "Comment Block",
+      "end": "\\*/",
+      "name": "comment.block.c3typ"
+    },
+    {
+      "begin": "\\'",
+      "comment": "Quotes",
+      "end": "\\'",
+      "name": "string.quoted.single.c3typ"
+    },
+    {
+      "begin": "\\\"",
+      "comment": "Quotes",
+      "end": "\\\"",
+      "name": "string.quoted.double.c3typ"
+    },
+    {
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.comment.c3typ"
+        }
+      },
+      "comment": "comment line",
+      "match": "(//).*$\\n?",
+      "name": "comment.line.double-slash.c3typ"
+    },
+    {
+      "comment": "Entity",
+      "match": "\\b(entity)\\b",
+      "name": "keyword.control.block.c3typ"
+    },
+    {
+      "comment": "Module",
+      "match": "\\b(module)\\b",
+      "name": "keyword.control.block.c3typ"
+    },
+    {
+      "comment": "Type",
+      "match": "\\b(type)\\b",
+      "name": "keyword.control.block.c3typ"
+    },
+    {
+      "comment": "key",
+      "match": "\\b(key)\\b",
+      "name": "keyword.control.block.c3typ"
+    },
+    {
+      "comment": "schema name",
+      "match": "\\b(schema\\sname)\\b",
+      "name": "keyword.control.block.c3typ"
+    },
+    {
+      "comment": "enum",
+      "match": "\\b(enum)",
+      "name": "keyword.control.block.c3typ"
+    },
+    {
+      "comment": "Abstract",
+      "match": "\\b(abstract)\\b",
+      "name": "keyword.other.modifier.c3typ"
+    },
+    {
+      "comment": "extendable",
+      "match": "\\b(extendable)\\b",
+      "name": "keyword.other.modifier.c3typ"
+    },
+    {
+      "comment": "constant",
+      "match": "\\b(constant)\\b",
+      "name": "keyword.other.modifier.c3typ"
+    },
+    {
+      "comment": "dated",
+      "match": "\\b(dated)\\b",
+      "name": "keyword.other.modifier.c3typ"
+    },
+    {
+      "comment": "default",
+      "match": "\\b(default)\\b",
+      "name": "keyword.other.modifier.c3typ"
+    },
+    {
+      "comment": "post",
+      "match": "\\b(post)\\b",
+      "name": "keyword.other.modifier.c3typ"
+    },
+    {
+      "comment": "stored calc",
+      "match": "\\b(stored)\\b",
+      "name": "support.function.c3typ"
+    },
+    {
+      "comment": "stored calc",
+      "match": "\\b(calc)\\b",
+      "name": "support.function.c3typ"
+    },
+    {
+      "comment": "js server",
+      "match": "\\b(js\\sserver)\\b",
+      "name": "keyword.control.block.c3typ"
+    },
+    {
+      "comment": "Mixin",
+      "match": "\\b(mixin)\\b",
+      "name": "keyword.control.block.c3typ"
+    },
+    {
+      "comment": "Remix",
+      "match": "\\b(remix)\\b",
+      "name": "keyword.control.block.c3typ"
+    },
+    {
+      "comment": "Mixes",
+      "match": "\\b(mixes)\\b",
+      "name": "keyword.control.block.c3typ"
+    },
+    {
+      "comment": "extends",
+      "match": "\\b(extends)\\b",
+      "name": "keyword.operator.c3typ"
+    },
+    {
+      "comment": "scratches",
+      "match": "\\b(scratches)\\b",
+      "name": "keyword.operator.c3typ"
+    },
+    {
+      "comment": "translate",
+      "match": "\\b(translate)\\b",
+      "name": "keyword.operator.c3typ"
+    },
+    {
+      "comment": "view",
+      "match": "\\b(view)\\b",
+      "name": "keyword.operator.c3typ"
+    },
+    {
+      "comment": "export",
+      "match": "\\b(export)\\b",
+      "name": "keyword.operator.c3typ"
+    },
+    {
+      "comment": "dyn",
+      "match": "\\b(dyn)\\b",
+      "name": "keyword.operator.c3typ"
+    },
+    {
+      "captures": {
+        "1": {
+          "name": "keyword.other.import.static.c3typ"
+        },
+        "2": {
+          "name": "string.other.quoted-or-unquoted.c3typ"
+        }
+      },
+      "comment": "import",
+      "match": "\\b(import)\\s+(\\w+)\\s"
+    },
+    {
+      "comment": "types",
+      "match": "\\b(string|int|boolean|decimal|double|datetime|integer)\\b",
+      "name": "storage.type.c3typ"
+    },
+    {
+      "comment": "types",
+      "match": "\\b(any|anyof|binary|blob|byte|char|character)\\b",
+      "name": "storage.type.c3typ"
+    },
+    {
+      "comment": "types",
+      "match": "\\b(clob|date|dateonly|float|lambda|long)\\b",
+      "name": "storage.type.c3typ"
+    },
+    {
+      "comment": "types",
+      "match": "\\b(map|native|set|string|utc)\\b",
+      "name": "storage.type.c3typ"
+    },
+    {
+      "comment": "types",
+      "match": "\\b(Dimension|dimension|string|utc)\\b",
+      "name": "storage.type.c3typ"
+    },
+    {
+      "comment": "\\@",
+      "match": "\\@(\\w*)",
+      "name": "entity.name.function.c3typ"
+    },
+    {
+      "comment": false,
+      "match": "\\!",
+      "name": "keyword.operator.required.c3typ"
+    },
+    {
+      "comment": "equal",
+      "match": "\\=",
+      "name": "keyword.operator.assignment.c3typ"
+    },
+    {
+      "comment": "boolean",
+      "match": "\\b(true|false|null)\\b",
+      "name": "constant.language.c3typ"
+    },
+    {
+      "begin": "\\b(function)\\b\\s*(\\()",
+      "beginCaptures": {
+        "1": {
+          "name": "entity.name.function.c3typ"
+        },
+        "2": {
+          "name": "punctuation.definition.annotation-arguments.begin.c3typ"
+        }
+      },
+      "comment": "function parameters",
+      "end": "(\\))",
+      "endCaptures": {
+        "1": {
+          "name": "punctuation.definition.annotation-arguments.end.c3typ"
+        }
+      },
+      "patterns": [
+        {
+          "captures": {
+            "1": {
+              "name": "storage.type.c3typ"
+            }
+          },
+          "match": "\\!*([0-z]*)\\s*([0-z]*),"
+        },
+        {
+          "captures": {
+            "1": {
+              "name": "storage.type.c3typ"
+            }
+          },
+          "match": "\\s*([0-z]*)\\s([0-z]*)"
+        },
+        {
+          "match": "\\,",
+          "name": "punctuation.definition.seperator.c3typ"
+        }
+      ]
+    }
+  ],
+  "scopeName": "source.c3typ"
+}

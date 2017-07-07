@@ -1,0 +1,43 @@
+{
+    "name": "language-c3",
+    "displayName": "language-c3",
+    "description": "Syntax highlighting for c3typ and c3ui files",
+    "version": "0.0.2",
+    "publisher": "rsamp",
+    "engines": {
+        "vscode": "^1.13.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "c3typ",
+            "aliases": ["c3typ"],
+            "extensions": [".c3typ"],
+            "configuration": "./language-configuration.json"
+        }, {
+            "id": "c3ui",
+            "aliases": ["c3ui"],
+            "extensions": [".c3ui"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "c3typ",
+            "scopeName": "source.c3typ",
+            "path": "./syntaxes/c3typ.tmLanguage.json"
+        }, {
+            "language": "c3ui",
+            "scopeName": "source.c3ui",
+            "path": "./syntaxes/c3ui.tmLanguage.json"
+        }]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rsamp/c3-vscode-syntax-highlighter.git"
+    },
+    "bugs": {
+        "url": "https://github.com/rsamp/c3-vscode-syntax-highlighter/issues"
+    },
+    "license": "C3IoT"
+}
