@@ -141,7 +141,12 @@
     {
       "comment": "extends",
       "match": "\\b(extends)\\b",
-      "name": "keyword.operator.c3typ"
+      "name": "keyword.control.block.c3typ"
+    },
+    {
+      "comment": "transforms",
+      "match": "\\b(transforms)\\b",
+      "name": "keyword.control.block.c3typ"
     },
     {
       "comment": "scratches",
@@ -211,7 +216,7 @@
       "name": "entity.name.function.c3typ"
     },
     {
-      "comment": false,
+      "comment": "required",
       "match": "\\!",
       "name": "keyword.operator.required.c3typ"
     },
