@@ -1,0 +1,94 @@
+{
+	"Entity type": {
+		"prefix": "entyp",
+		"scope": "c3typ",
+		"body": [
+			"entity type ${1:${TM_FILENAME_BASE}}$2 {",
+			"    $0",
+			"}"
+		],
+		"description": "Simple entity type snippet."
+	},
+
+	"Canonical": {
+		"prefix": "canon",
+		"scope": "c3typ",
+		"body": [
+			"type Canonical$1 mixes Canonical<Canonical$1>$2 {",
+			"    $0",
+			"}"
+		],
+		"description": "Canonical type basic structure."
+	},
+
+	"Transform": {
+		"prefix": "transcan",
+		"scope": "c3typ",
+		"body": [
+			"type TransformCanonical$1To$2 mixes $2 transforms Canonical$1$3 {",
+			"    $0",
+			"}"
+		],
+		"description": "Classic Transform Canonical -> Type structure."
+	},
+	"Transform field": {
+		"prefix": "link",
+		"scope": "c3typ",
+		"body": "$1: ~ expression $0"
+	},
+
+	"SimpleMetric JSON declaration": {
+		"prefix": "smetric",
+		"scope": "json",
+		"body": [
+			"{",
+			"    \"id\": \"$1_$2\",",
+			"    \"name\": \"$1\",",
+			"    \"srcType\": \"$2\",",
+			"    \"path\": \"$3\",",
+			"    \"expression\": \"$4\",",
+			"    \"description\": \"$5\"$0",
+			"}"
+		]
+	},
+	"CompoundMEtric JSON declaration": {
+		"prefix": "cmetric",
+		"scope": "json",
+		"body": [
+			"{",
+			"    \"id\": \"$1\",",
+			"    \"name\": \"$1\",",
+			"    \"expression\": \"$2\",",
+			"    \"description\": \"$3\"$0",
+			"}"
+		]
+	},
+
+	"TSDataFlowEvent": {
+		"prefix": "tsdfe",
+		"scope": "c3typ",
+		"body": [
+			"@DFE(period='${1|HOUR,DAY,MONTH|}', interval='${2|HOUR,DAY,MONTH|}', metric='${3:MetricName}'$4)",
+			"type ${5:${TM_FILENAME_BASE}} mixes TSDataFlowEvent<${6:TargetType}>"
+		]
+	},
+	"CompoundDataFlowEvent": {
+		"prefix": "comdfe",
+		"scope": "c3typ",
+		"body": [
+			"@DFE(period='${1|HOUR,DAY,MONTH|}', interval='${2|HOUR,DAY,MONTH|}'$3)",
+			"type ${4:${TM_FILENAME_BASE}} mixes CompoundDataFlowEvent<${5:TargetType}> {",
+			"    $0",
+			"}"
+		]
+	},
+	"Analytic": {
+		"prefix": "analytic",
+		"scope": "c3typ",
+		"body": [
+			"type ${1:${TM_FILENAME_BASE}} mixes Analytic<${2:InputType}, ${3:OutputType}> {",
+			"    process: ~ js server$0",
+			"}"
+		]
+	}
+}

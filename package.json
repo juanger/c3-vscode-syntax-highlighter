@@ -30,6 +30,10 @@
             "language": "c3ui",
             "scopeName": "source.c3ui",
             "path": "./syntaxes/c3ui.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "c3typ",
+            "path": "./snippets/c3typ.json"
         }]
     },
     "repository": {
