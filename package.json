@@ -2,7 +2,7 @@
     "name": "language-c3",
     "displayName": "language-c3",
     "description": "Syntax highlighting for c3typ and c3ui files",
-    "version": "0.0.2",
+    "version": "0.1.0",
     "publisher": "rsamp",
     "engines": {
         "vscode": "^1.13.0"
@@ -11,30 +11,46 @@
         "Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "c3typ",
-            "aliases": ["c3typ"],
-            "extensions": [".c3typ"],
-            "configuration": "./language-configuration.json"
-        }, {
-            "id": "c3ui",
-            "aliases": ["c3ui"],
-            "extensions": [".c3ui"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "c3typ",
-            "scopeName": "source.c3typ",
-            "path": "./syntaxes/c3typ.tmLanguage.json"
-        }, {
-            "language": "c3ui",
-            "scopeName": "source.c3ui",
-            "path": "./syntaxes/c3ui.tmLanguage.json"
-        }],
-        "snippets": [{
-            "language": "c3typ",
-            "path": "./snippets/c3typ.json"
-        }]
+        "languages": [
+            {
+                "id": "c3typ",
+                "aliases": [
+                    "c3typ"
+                ],
+                "extensions": [
+                    ".c3typ"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "c3ui",
+                "aliases": [
+                    "c3ui"
+                ],
+                "extensions": [
+                    ".c3ui"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "c3typ",
+                "scopeName": "source.c3typ",
+                "path": "./syntaxes/c3typ.tmLanguage.json"
+            },
+            {
+                "language": "c3ui",
+                "scopeName": "source.c3ui",
+                "path": "./syntaxes/c3ui.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "c3typ",
+                "path": "./snippets/c3typ.json"
+            }
+        ]
     },
     "repository": {
         "type": "git",
