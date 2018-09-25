@@ -2,7 +2,7 @@
     "name": "language-c3",
     "displayName": "language-c3",
     "description": "Syntax highlighting for c3typ and c3ui files",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "rsamp",
     "engines": {
         "vscode": "^1.13.0"
