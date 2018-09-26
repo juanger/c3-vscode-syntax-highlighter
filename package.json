@@ -7,6 +7,8 @@
     "engines": {
         "vscode": "^1.13.0"
     },
+    "main": "extension.js",
+    "activationEvents": [],
     "categories": [
         "Programming Languages"
     ],
@@ -31,6 +33,15 @@
                     ".c3ui"
                 ],
                 "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "markdown",
+                "aliases": [
+                    "c3doc"
+                ],
+                "extensions": [
+                    ".c3doc"
+                ]
             }
         ],
         "grammars": [
@@ -50,7 +61,8 @@
                 "language": "c3typ",
                 "path": "./snippets/c3typ.json"
             }
-        ]
+        ],
+        "markdown.markdownItPlugins": true
     },
     "repository": {
         "type": "git",
